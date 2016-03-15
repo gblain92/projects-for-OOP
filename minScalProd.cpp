@@ -21,9 +21,11 @@ return 0;
 
 void minimumScalar (vector<int> x, vector<int> y) {
 
-    if(x.size() != y.size())
+    if(x.size() != y.size()){
+        cout << "Vectors must be of the same size." << endl;
         return;
 
+    }
 
     sort(x.begin(), x.end());           //sort from smallest to largest
     sort(y.begin(), y.end());           //sort from smallest to largest
